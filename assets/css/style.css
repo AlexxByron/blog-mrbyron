@@ -137,23 +137,23 @@ ul {
 }
 @font-face {
   font-family: 'SpartanRegular';
-  src: url('assets/fonts/SpartanRegular.eot');
-  src: url('assets/fonts/SpartanRegular.eot') format('embedded-opentype'), url('assets/fonts/SpartanRegular.woff2') format('woff2'), url('assets/fonts/SpartanRegular.woff') format('woff'), url('assets/fonts/SpartanRegular.ttf') format('truetype'), url('assets/fonts/SpartanRegular.svg#SpartanRegular') format('svg');
+  src: url('../fonts/SpartanRegular.eot');
+  src: url('../fonts/SpartanRegular.eot') format('embedded-opentype'), url('../fonts/SpartanRegular.woff2') format('woff2'), url('../fonts/SpartanRegular.woff') format('woff'), url('../fonts/SpartanRegular.ttf') format('truetype'), url('../fonts/SpartanRegular.svg#SpartanRegular') format('svg');
 }
 @font-face {
   font-family: 'SpartanMedium';
-  src: url('assets/fonts/SpartanMedium.eot');
-  src: url('assets/fonts/SpartanMedium.eot') format('embedded-opentype'), url('assets/fonts/SpartanMedium.woff2') format('woff2'), url('assets/fonts/SpartanMedium.woff') format('woff'), url('assets/fonts/SpartanMedium.ttf') format('truetype'), url('assets/fonts/SpartanMedium.svg#SpartanMedium') format('svg');
+  src: url('../fonts/SpartanMedium.eot');
+  src: url('../fonts/SpartanMedium.eot') format('embedded-opentype'), url('../fonts/SpartanMedium.woff2') format('woff2'), url('../fonts/SpartanMedium.woff') format('woff'), url('../fonts/SpartanMedium.ttf') format('truetype'), url('../fonts/SpartanMedium.svg#SpartanMedium') format('svg');
 }
 @font-face {
   font-family: 'SpartanSemiBold';
-  src: url('assets/fonts/SpartanSemiBold.eot');
-  src: url('assets/fonts/SpartanSemiBold.eot') format('embedded-opentype'), url('assets/fonts/SpartanSemiBold.woff2') format('woff2'), url('assets/fonts/SpartanSemiBold.woff') format('woff'), url('assets/fonts/SpartanSemiBold.ttf') format('truetype'), url('assets/fonts/SpartanSemiBold.svg#SpartanSemiBold') format('svg');
+  src: url('../fonts/SpartanSemiBold.eot');
+  src: url('../fonts/SpartanSemiBold.eot') format('embedded-opentype'), url('../fonts/SpartanSemiBold.woff2') format('woff2'), url('../fonts/SpartanSemiBold.woff') format('woff'), url('../fonts/SpartanSemiBold.ttf') format('truetype'), url('../fonts/SpartanSemiBold.svg#SpartanSemiBold') format('svg');
 }
 @font-face {
   font-family: 'SpartanBold';
-  src: url('assets/fonts/SpartanBold.eot');
-  src: url('assets/fonts/SpartanBold.eot') format('embedded-opentype'), url('assets/fonts/SpartanBold.woff2') format('woff2'), url('assets/fonts/SpartanBold.woff') format('woff'), url('assets/fonts/SpartanBold.ttf') format('truetype'), url('assets/fonts/SpartanBold.svg#SpartanBold') format('svg');
+  src: url('../fonts/SpartanBold.eot');
+  src: url('../fonts/SpartanBold.eot') format('embedded-opentype'), url('../fonts/SpartanBold.woff2') format('woff2'), url('../fonts/SpartanBold.woff') format('woff'), url('../fonts/SpartanBold.ttf') format('truetype'), url('../fonts/SpartanBold.svg#SpartanBold') format('svg');
 }
 /*****************************************************
     02. Common Class CSS Here 

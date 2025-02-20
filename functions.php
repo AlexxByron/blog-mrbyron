@@ -142,57 +142,56 @@ function blog_mrbyron_scripts() {
     wp_enqueue_style('bootstrap-style', get_template_directory_uri() . '/assets/css/bootstrap.min.css', array(), '5.0.2');
     
     // Fontawesome
-    wp_enqueue_style('fontawesome-style', get_template_directory_uri() . '/assets/css/all.min.css', array(), MR_BYRON_BLOG_VERSION);
+    wp_enqueue_style('fontawesome-style', get_template_directory_uri() . '/assets/css/all.min.css', array(), '5.0.2');
 
     // Rounded CSS
-    wp_enqueue_style('rounded-style', get_template_directory_uri() . '/assets/css/rounded.css', array(), MR_BYRON_BLOG_VERSION);
+    wp_enqueue_style('rounded-style', get_template_directory_uri() . '/assets/css/rounded.css', array(), '5.0.2');
 
     // Back Menus CSS
-    wp_enqueue_style('back-menus-style', get_template_directory_uri() . '/assets/css/back-menus.css', array(), MR_BYRON_BLOG_VERSION);
+    wp_enqueue_style('back-menus-style', get_template_directory_uri() . '/assets/css/back-menus.css', array(), '5.0.2');
 
     // Animate CSS
-    wp_enqueue_style('animate-style', get_template_directory_uri() . '/assets/css/animate.css', array(), MR_BYRON_BLOG_VERSION);
+    wp_enqueue_style('animate-style', get_template_directory_uri() . '/assets/css/animate.css', array(), '5.0.2');
 
     // Owl Carousel
-    wp_enqueue_style('owl-carousel-style', get_template_directory_uri() . '/assets/css/owl.carousel.css', array(), MR_BYRON_BLOG_VERSION);
+    wp_enqueue_style('owl-carousel-style', get_template_directory_uri() . '/assets/css/owl.carousel.css', array(), '5.0.2');
 
     // Magnific Popup
-    wp_enqueue_style('magnific-popup-style', get_template_directory_uri() . '/assets/css/magnific-popup.css', array(), MR_BYRON_BLOG_VERSION);
+    wp_enqueue_style('magnific-popup-style', get_template_directory_uri() . '/assets/css/magnific-popup.css', array(), '5.0.2');
 
-    // Main Style CSS
-    wp_enqueue_style('blog-mrbyron-style', get_stylesheet_uri(), array(), MR_BYRON_BLOG_VERSION);
-    wp_style_add_data('blog-mrbyron-style', 'rtl', 'replace');
+    // Main Style CSS (style.css)
+    wp_enqueue_style('blog-mrbyron-style', get_template_directory_uri() . '/assets/css/style.css', array(), '5.0.2');
 
     // Spacing CSS
-    wp_enqueue_style('back-spacing-style', get_template_directory_uri() . '/assets/css/back-spacing.css', array(), MR_BYRON_BLOG_VERSION);
+    wp_enqueue_style('back-spacing-style', get_template_directory_uri() . '/assets/css/back-spacing.css', array(), '5.0.2');
 
     // Responsive CSS
-    wp_enqueue_style('responsive-style', get_template_directory_uri() . '/assets/css/responsive.css', array(), MR_BYRON_BLOG_VERSION);
+    wp_enqueue_style('responsive-style', get_template_directory_uri() . '/assets/css/responsive.css', array(), '5.0.2');
 
-    // Navigation Script
-    wp_enqueue_script('blog-mrbyron-navigation', get_template_directory_uri() . '/js/navigation.js', array(), MR_BYRON_BLOG_VERSION, true);
+	wp_enqueue_style('blog-mrbyron-style', get_stylesheet_uri(), array(), MR_BYRON_BLOG_VERSION);
+    wp_style_add_data('blog-mrbyron-style', 'rtl', 'replace');
 
-	// Bootstrap JavaScript
-    wp_enqueue_script('bootstrap-js', get_template_directory_uri() . '/assets/js/bootstrap.min.js', array('jquery'), MR_BYRON_BLOG_VERSION, true);
+	 // Bootstrap JavaScript
+	 wp_enqueue_script('bootstrap-js', get_template_directory_uri() . '/assets/js/bootstrap.min.js', array('jquery'), '5.0.2', true);
 
-    // Owl Carousel JavaScript
-    wp_enqueue_script('owl-carousel-js', get_template_directory_uri() . '/assets/js/owl.carousel.min.js', array('jquery'), MR_BYRON_BLOG_VERSION, true);
+	 // Owl Carousel JavaScript
+	 wp_enqueue_script('owl-carousel-js', get_template_directory_uri() . '/assets/js/owl.carousel.min.js', array('jquery'), '5.0.2', true);
+ 
+	 // Magnific Popup JavaScript
+	 wp_enqueue_script('magnific-popup-js', get_template_directory_uri() . '/assets/js/jquery.magnific-popup.min.js', array('jquery'), '5.0.2', true);
+ 
+	 // WOW JavaScript
+	 wp_enqueue_script('wow-js', get_template_directory_uri() . '/assets/js/wow.min.js', array(),'5.0.2', true);
+ 
+	 // Back Menus JavaScript
+	 wp_enqueue_script('back-menus-js', get_template_directory_uri() . '/assets/js/back-menus.js', array(), '5.0.2', true);
+ 
+	 // Plugins JavaScript
+	 wp_enqueue_script('plugins-js', get_template_directory_uri() . '/assets/js/plugins.js', array(), '5.0.2', true);
+ 
+	 // Main JavaScript
+	 wp_enqueue_script('main-js', get_template_directory_uri() . '/assets/js/main.js', array(),'5.0.2');
 
-    // Magnific Popup JavaScript
-    wp_enqueue_script('magnific-popup-js', get_template_directory_uri() . '/assets/js/jquery.magnific-popup.min.js', array('jquery'), MR_BYRON_BLOG_VERSION, true);
-
-    // WOW JavaScript
-    wp_enqueue_script('wow-js', get_template_directory_uri() . '/assets/js/wow.min.js', array(), MR_BYRON_BLOG_VERSION, true);
-
-    // Back Menus JavaScript
-    wp_enqueue_script('back-menus-js', get_template_directory_uri() . '/assets/js/back-menus.js', array(), MR_BYRON_BLOG_VERSION, true);
-
-    // Plugins JavaScript
-    wp_enqueue_script('plugins-js', get_template_directory_uri() . '/assets/js/plugins.js', array(), MR_BYRON_BLOG_VERSION, true);
-
-    // Main JavaScript
-    wp_enqueue_script('main-js', get_template_directory_uri() . '/assets/js/main.js', array(), MR_BYRON_BLOG_VERSION, true);
-	
     // Comment-reply Script
     if (is_singular() && comments_open() && get_option('thread_comments')) {
         wp_enqueue_script('comment-reply');
@@ -200,8 +199,6 @@ function blog_mrbyron_scripts() {
 }
 
 add_action('wp_enqueue_scripts', 'blog_mrbyron_scripts');
-
-
 /**
  * Implement the Custom Header feature.
  */

@@ -8,52 +8,77 @@
  *
  * @package Blog_Mrbyron
  */
-
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
 <head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="profile" href="https://gmpg.org/xfn/11">
-
-	<?php wp_head(); ?>
+    <meta charset="<?php bloginfo('charset'); ?>">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <?php wp_head(); ?>
 </head>
-
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'blog-mrbyron' ); ?></a>
-
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$blog_mrbyron_description = get_bloginfo( 'description', 'display' );
-			if ( $blog_mrbyron_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $blog_mrbyron_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-			<?php endif; ?>
-		</div><!-- .site-branding -->
-
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'blog-mrbyron' ); ?></button>
-			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				)
-			);
-			?>
-		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
+    <a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e('Skip to content', 'blog-mrbyron'); ?></a>
+    <header id="back-header" class="back-header">
+        <div class="toolbar-area hidden-md">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="toolbar-text">
+                            <div class="latest-news-title">LATEST NEWS</div>
+                            <div class="latest-news">
+                                <div class="back-topbar-slider owl-carousel">
+                                    <div>Because you deserve nothing but the truth</div>
+                                    <div>Pandemic impact mental health global view</div>
+                                    <div>Drunk driving law by on country and arrest</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <div class="toolbar-content">
+                            <div class="toolbar-sl-share">
+                                <ul>
+                                    <li class="back-follow">Follow Us</li>
+                                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                                    <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="menu-part">
+            <div class="container">
+                <div class="back-main-menu">
+                    <nav>
+                        <div class="menu-toggle">
+                            <div class="logo">
+                                <a href="<?php echo home_url(); ?>" class="logo-text">
+                                    <img class="back-logo-dark" src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/logo.png" alt="logo">
+                                    <img class="back-logo-light" src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/light-logo.png" alt="logo">
+                                </a>
+                            </div>
+                            <button type="button" id="menu-btn">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <?php wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'backmenu', 'container_class' => 'back-inner-menus', 'menu_class' => 'back-menus back-sub-shadow')); ?>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Aquí continúa el contenido de tu sitio -->
+</div>
+<?php wp_footer(); ?>
+</body>
+</html>

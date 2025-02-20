@@ -14,7 +14,7 @@ get_header();
                 </a>
             </div>
             <div class="offback-logo">
-                <a href="index.html" class="logo-text"> <img src="assets/images/logo.png" alt="logo"></a>
+                <a href="index.html" class="logo-text"> <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/logo.png" alt="logo"></a>
             </div>
             <div class="offcanvas-text">
                 <p>Education every new parents knows the feeling nothing more than for everyone to get at some sleep.But at least you’ve got Google. start building your first prototype today!</p>
@@ -63,184 +63,6 @@ get_header();
             </div>
         </div>
         <!--================= Back offcanvas End Here =================-->
-        
-        <!--================= Preloader Section Start Here =================-->        
-        <div id="back__preloader">
-            <div id="back__circle_loader"></div>
-            <div class="back__loader_logo"><img src="assets/images/preload.png" alt="Preload"></div>
-        </div>        
-        <!--================= Preloader Section End Here =================-->
-
-        <!--================= Header Section Start Here =================-->
-        <header id="back-header" class="back-header">
-            <!--================= Topbar Section Start Here =================-->
-            <div class="toolbar-area hidden-md">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6 col-md-12">
-                            <div class="toolbar-text">
-                                <div class="latest-news-title">LATEST NEWS</div>
-                                <div class="latest-news">
-                                    <div class="back-topbar-slider owl-carousel">
-                                        <div>Because you deserve nothing but the truth</div>
-                                        <div>Pandemic impact mental health global view</div>
-                                        <div>Drunk driving law by on country and arrest</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-12">
-                            <div class="toolbar-content">
-                                <div class="toolbar-sl-share">
-                                    <ul>
-                                        <li class="back-follow">Follow Us</li>
-                                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
-                                        <li><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
-                                        <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--================= Topbar Section End Here =================-->
-            <div class="menu-part">
-                <div class="container">
-                    <!--================= Back Menu Start Here =================-->
-                    <div class="back-main-menu">
-                        <nav>
-                            <!--================= Menu Toggle btn =================-->
-                            <div class="menu-toggle">
-                                <div class="logo"><a href="index.html" class="logo-text"> <img class="back-logo-dark" src="assets/images/logo.png" alt="logo"> <img class="back-logo-light" src="assets/images/light-logo.png" alt="logo"> </a></div>
-
-                                <div class="searchbar-part back-search-mobile"> 
-                                    <ul>
-                                        <li class="back-dark-light"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun back-go-light1"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon back-go-dark1"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg></li>
-                                        <li class="back_search"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></li>
-                                        <li class="back-sign"><a href="login.html">Sign In</a></li>
-                                        <li id="nav-expanders" class="nav-expander bar">
-                                            <span class="back-hum1"></span>
-                                            <span class="back-hum2"></span>
-                                            <span class="back-hum3"></span>
-                                        </li>
-                                    </ul>                                 
-                                    <form class="search-form">
-                                        <input type="text" class="form-input" placeholder="Search Here">
-                                        <button type="submit" class="form-button">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-                                        </button>
-                                    </form>
-                                </div>
-
-                                <button type="button" id="menu-btn">
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                </button>
-                            </div>
-                            <!--================= Menu Structure =================--> 
-                            <div class="back-inner-menus">
-                                <ul id="backmenu" class="back-menus back-sub-shadow">
-                                    <li> <a href="#">Home</a>
-                                        <ul>
-                                            <li> <a href="index.html">Home One</a></li> 
-                                            <li> <a href="index-two.html">Home Two</a></li> 
-                                            <li> <a href="index-three.html">Home Three</a></li> 
-                                        </ul>
-                                    </li>
-                                    <li> <a href="#">Pages</a>
-                                        <ul>
-                                            <li> <a href="about.html">About</a></li>
-                                            <li> <a href="team.html">Team</a></li>
-                                            <li> <a href="contact.html">Contact</a></li>
-                                            <li> <a href="author.html">Author</a></li>
-                                            <li> <a href="login.html">Login</a></li>
-                                            <li> <a href="registration.html">Registration</a></li>
-                                            <li> <a href="404.html">Error 404</a></li>
-                                        </ul>
-                                    </li>                                                                   
-                                    <li> <a href="#">Categories</a>
-                                        <ul>
-                                            <li><a href="politics.html">Politics</a></li>
-                                            <li><a href="technology.html">Technology</a></li>
-                                            <li><a href="health.html">Health</a></li>
-                                            <li><a href="travel.html">Travel</a></li>
-                                            <li><a href="lifestyle.html">Lifestyle</a></li>
-                                            <li><a href="sports.html">Sports</a></li>
-                                        </ul>
-                                    </li>
-                                    <li> <a href="blog.html">Blog</a>
-                                        <ul>
-                                            <li><a href="blog.html">Blog</a>
-                                                <ul>
-                                                    <li><a href="blog.html">Classic</a></li>
-                                                    <li><a href="blog-left-sidebar.html">Left Sidebar</a></li>
-                                                    <li><a href="blog-right-sidebar.html">Right Sidebar</a></li>
-                                                    <li><a href="blog-fullwidth.html">Full Width</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="blog-details.html">Blog Single</a>
-                                                <ul>
-                                                    <li><a href="blog-details.html">Classic</a></li>
-                                                    <li><a href="blog-details-left.html">Left Sidebar</a></li>
-                                                    <li><a href="blog-details-right.html">Right Sidebar</a></li>
-                                                    <li><a href="blog-details-full.html">Full Width</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li> <a href="#">Posts</a>
-                                        <ul>
-                                            <li><a href="standard-post.html">Standard Post</a></li>
-                                            <li><a href="gallery-post.html">Gallery Post</a></li>
-                                            <li><a href="video-post.html">Video Post</a></li>
-                                            <li><a href="audio-post.html">Audio Post</a></li>                                            
-                                            <li><a href="quote-post.html">Quote Post</a></li>                                            
-                                            <li><a href="aside-post.html">Aside Post</a></li>                                            
-                                            <li><a href="link-post.html">Link Post</a></li>                                            
-                                            <li><a href="#">Post Sidebar</a>
-                                                <ul>
-                                                    <li><a href="blog-details-left.html">Left Sidebar</a></li>
-                                                    <li><a href="blog-details-right.html">Right Sidebar</a></li>
-                                                    <li><a href="blog-details-full.html">No Sidebar</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="multiple-authors.html">Multiple Authors</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                                
-                                <div class="searchbar-part back-search-desktop"> 
-                                    <ul>
-                                        <li class="back-dark-light"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun back-go-light"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon back-go-dark"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg></li>
-                                        <li class="back_search"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></li>
-                                        <li class="back-sign"><a href="login.html">Sign In</a></li>
-                                        <li id="nav-expander" class="nav-expander bar">
-                                            <span class="back-hum1"></span>
-                                            <span class="back-hum2"></span>
-                                            <span class="back-hum3"></span>
-                                        </li>
-                                    </ul>                                  
-                                    <form class="search-form">
-                                        <input type="text" class="form-input" placeholder="Search Here">
-                                        <button type="submit" class="form-button">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-                                        </button>
-                                    </form>
-                                </div>                                
-                            </div>                            
-                        </nav>
-                    </div>
-                    <!--=================  Back Menu End Here  =================-->
-                </div>
-            </div>
-        </header>
-        <!--================= Header Section End Here =================-->
 
         <!--================= Back Wrapper Start Here =================-->
         <div class="back-wrapper">
@@ -252,12 +74,12 @@ get_header();
                             <ul class="back-hero-slider owl-carousel">
                                 <li>
                                     <div class="image-area">
-                                        <a href="#"><img src="assets/images/hero-blog/1.jpg" alt="image"></a>
+                                    <a href="#"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/hero-blog/1.jpg" alt="image"></a>
                                         <div class="back-btm-content">
                                             <a href="#" class="back-cate back-life">Lifestyle</a>
                                             <h3><a href="#">Bosmogenic an designed for narita iourism in moon</a></h3>
                                             <ul>
-                                                <li class="back-author"><span><img src="assets/images/author/1.jpg" alt="image"></span><a href="#">by Jon Deo</a></li>
+                                                <li class="back-author"><span><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/author/1.jpg" alt="image"></span><a href="#">by Jon Deo</a></li>
                                                 <li class="back-date"><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg></span>March 29, 2022</li>
                                                 <li class="back-comments"><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg></span>99 Comments</li>
                                             </ul>
@@ -266,12 +88,12 @@ get_header();
                                 </li>
                                 <li>
                                     <div class="image-area">
-                                        <a href="#"><img src="assets/images/hero-blog/11.jpg" alt="image"></a>
+                                        <a href="#"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/hero-blog/11.jpg" alt="image"></a>
                                         <div class="back-btm-content">
                                             <a href="#" class="back-cate back-life">Beauty</a>
                                             <h3><a href="#">Beauty an designed narita iourism in moon others</a></h3>
                                             <ul>
-                                                <li class="back-author"><span><img src="assets/images/author/2.jpg" alt="image"></span><a href="#">by Jon Deo</a></li>
+                                                <li class="back-author"><span><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/author/2.jpg" alt="image"></span><a href="#">by Jon Deo</a></li>
                                                 <li class="back-date"><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg></span>March 29, 2022</li>
                                                 <li class="back-comments"><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg></span>99 Comments</li>
                                             </ul>
@@ -286,12 +108,12 @@ get_header();
                                     <ul>
                                         <li>
                                             <div class="image-area">
-                                                <a href="#"><img src="assets/images/hero-blog/2.jpg" alt="image"></a>
+                                                <a href="#"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/hero-blog/2.jpg" alt="image"></a>
                                                 <div class="back-btm-content">
                                                     <a href="#" class="back-cate back-poli">Politics</a>
                                                     <h3><a href="#">Dui fames tempora maiores dicta anim? Vel curae eaque ab eaque pharetra blandit</a></h3>
                                                     <ul>
-                                                        <li class="back-author"><span><img src="assets/images/author/1.jpg" alt="image"></span><a href="#">by Jon Deo</a></li>
+                                                        <li class="back-author"><span><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/author/1.jpg" alt="image"></span><a href="#">by Jon Deo</a></li>
                                                         <li class="back-date"><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg></span>March 29, 2022</li>
                                                         <li class="back-comments"><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg></span>99 Comments</li>
                                                     </ul>
@@ -304,12 +126,12 @@ get_header();
                                     <ul class="back-pr-3">
                                         <li>
                                             <div class="image-area">
-                                                <a href="#"><img src="assets/images/hero-blog/3.jpg" alt="image"></a>
+                                                <a href="#"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/hero-blog/3.jpg" alt="image"></a>
                                                 <div class="back-btm-content">
                                                     <a href="#" class="back-cate back-tech">Technology</a>
                                                     <h3><a href="#">Virtual reality is here!</a></h3>
                                                     <ul>
-                                                        <li class="back-author"><span><img src="assets/images/author/3.jpg" alt="image"></span><a href="#">by Jon Deo</a></li>
+                                                        <li class="back-author"><span><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/author/3.jpg" alt="image"></span><a href="#">by Jon Deo</a></li>
                                                     </ul>
                                                 </div>
                                             </div> 
@@ -320,12 +142,12 @@ get_header();
                                     <ul class="back-pl-3">
                                         <li>
                                             <div class="image-area">
-                                                <a href="#"><img src="assets/images/hero-blog/4.jpg" alt="image"></a>
+                                                <a href="#"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/hero-blog/4.jpg" alt="image"></a>
                                                 <div class="back-btm-content">
                                                     <a href="#" class="back-cate back-tra">Travel</a>
                                                     <h3><a href="#">Running on the field.</a></h3>
                                                     <ul>
-                                                        <li class="back-author"><span><img src="assets/images/author/2.jpg" alt="image"></span><a href="#">by Jon Deo</a></li>                                                        
+                                                        <li class="back-author"><span><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/author/2.jpg" alt="image"></span><a href="#">by Jon Deo</a></li>                                                        
                                                     </ul>
                                                 </div>
                                             </div> 
@@ -338,7 +160,7 @@ get_header();
                     <ul class="back-hero-bottom back-hero-slider2 owl-carousel">
                         <li>
                             <div class="image-areas">
-                                <a href="#"><img src="assets/images/hero-blog/5.jpg" alt="image"></a>                                
+                                <a href="#"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/hero-blog/5.jpg" alt="image"></a>                                
                             </div>
                             <div class="back-btm-content">
                                 <a href="#" class="back-cates">Design</a>
@@ -350,7 +172,7 @@ get_header();
                         </li>
                         <li>
                             <div class="image-areas">
-                                <a href="#"><img src="assets/images/hero-blog/6.jpg" alt="image"></a>
+                                <a href="#"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/hero-blog/6.jpg" alt="image"></a>
                             </div> 
                             <div class="back-btm-content">
                                 <a href="#" class="back-cates">Travel</a>
@@ -362,7 +184,7 @@ get_header();
                         </li>
                         <li>
                             <div class="image-areas">
-                                <a href="#"><img src="assets/images/hero-blog/7.jpg" alt="image"></a>
+                                <a href="#"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/hero-blog/7.jpg" alt="image"></a>
                             </div> 
                             <div class="back-btm-content">
                                 <a href="#" class="back-cates">Technology</a>
@@ -374,7 +196,7 @@ get_header();
                         </li>
                         <li>
                             <div class="image-areas">
-                                <a href="#"><img src="assets/images/hero-blog/8.jpg" alt="image"></a>                                
+                                <a href="#"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/hero-blog/8.jpg" alt="image"></a>                                
                             </div>
                             <div class="back-btm-content">
                                 <a href="#" class="back-cates">Lifestyle</a>
@@ -398,7 +220,7 @@ get_header();
                     <ul class="back-trending-slider owl-carousel">
                         <li>
                             <div class="image-areas">
-                                <a href="#"><img src="assets/images/trending/1.jpg" alt="image"></a>
+                                <a href="#"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/trending/1.jpg" alt="image"></a>
                                 <a href="#" class="back-cate back-beauty">Beauty</a>                               
                             </div>
                             <div class="back-btm-content">                                
@@ -411,7 +233,7 @@ get_header();
                         </li>
                         <li>
                             <div class="image-areas">
-                                <a href="#"><img src="assets/images/trending/2.jpg" alt="image"></a>
+                                <a href="#"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/trending/2.jpg" alt="image"></a>
                                 <a href="#" class="back-cate back-tra">Travel</a>                               
                             </div>
                             <div class="back-btm-content">                                
@@ -424,7 +246,7 @@ get_header();
                         </li>
                         <li>
                             <div class="image-areas">
-                                <a href="#"><img src="assets/images/trending/3.jpg" alt="image"></a>
+                                <a href="#"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/trending/3.jpg" alt="image"></a>
                                 <a href="#" class="back-cate back-design">Design</a>                               
                             </div>
                             <div class="back-btm-content">                                
@@ -437,7 +259,7 @@ get_header();
                         </li>
                         <li>
                             <div class="image-areas">
-                                <a href="#"><img src="assets/images/trending/4.jpg" alt="image"></a>
+                                <a href="#"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/trending/4.jpg" alt="image"></a>
                                 <a href="#" class="back-cate back-poli">Politics</a>                               
                             </div>
                             <div class="back-btm-content">                                
@@ -450,7 +272,7 @@ get_header();
                         </li>
                         <li>
                             <div class="image-areas">
-                                <a href="#"><img src="assets/images/trending/5.jpg" alt="image"></a> 
+                                <a href="#"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/trending/5.jpg" alt="image"></a> 
                                 <a href="#" class="back-cate back-tech">Technology</a>                               
                             </div>
                             <div class="back-btm-content">                                
@@ -484,12 +306,12 @@ get_header();
                             <ul>
                                 <li>
                                     <div class="image-area">
-                                        <a href="#"><img src="assets/images/latest-news/1.jpg" alt="image"></a>
+                                        <a href="#"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/latest-news/1.jpg" alt="image"></a>
                                         <div class="back-btm-content">
                                             <a href="#" class="back-cate back-tra">Politics</a>
                                             <h3><a href="#">Well designed and well printed only <br>for you and the audience.</a></h3>
                                             <ul>
-                                                <li class="back-author"><span><img src="assets/images/author/1.jpg" alt="image"></span><a href="#">by Jon Deo</a></li>
+                                                <li class="back-author"><span><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/author/1.jpg" alt="image"></span><a href="#">by Jon Deo</a></li>
                                                 <li class="back-date"><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg></span>March 26, 2022</li>
                                                 <li class="back-comments"><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg></span>95 Comments</li>
                                             </ul>
@@ -502,7 +324,7 @@ get_header();
                             <ul class="back-hero-bottom">
                                 <li>
                                     <div class="image-areas">
-                                        <a href="#"><img src="assets/images/latest-news/2.jpg" alt="image"></a>                                
+                                        <a href="#"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/latest-news/2.jpg" alt="image"></a>                                
                                     </div>
                                     <div class="back-btm-content">
                                         <a href="#" class="back-cates">Travel</a>
@@ -511,7 +333,7 @@ get_header();
                                 </li>
                                 <li>
                                     <div class="image-areas">
-                                        <a href="#"><img src="assets/images/latest-news/3.jpg" alt="image"></a>
+                                        <a href="#"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/latest-news/3.jpg" alt="image"></a>
                                     </div> 
                                     <div class="back-btm-content">
                                         <a href="#" class="back-cates">Art & Design</a>
@@ -520,7 +342,7 @@ get_header();
                                 </li>
                                 <li>
                                     <div class="image-areas">
-                                        <a href="#"><img src="assets/images/latest-news/4.jpg" alt="image"></a>
+                                        <a href="#"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/latest-news/4.jpg" alt="image"></a>
                                     </div> 
                                     <div class="back-btm-content">
                                         <a href="#" class="back-cates">Lifestyle</a>
@@ -529,7 +351,7 @@ get_header();
                                 </li>
                                 <li>
                                     <div class="image-areas">
-                                        <a href="#"><img src="assets/images/latest-news/5.jpg" alt="image"></a>                              
+                                        <a href="#"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/latest-news/5.jpg" alt="image"></a>                              
                                     </div>
                                     <div class="back-btm-content">
                                         <a href="#" class="back-cates">Fashion</a>
@@ -544,7 +366,7 @@ get_header();
             <!--================= Back Latest Posts End Here =================-->
 
             <!--================= Back Add Start Here =================-->
-            <div class="back-add text-center"><div class="container"><img src="assets/images/add2.jpg" alt="add-image"></div></div>
+            <div class="back-add text-center"><div class="container"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/add2.jpg" alt="add-image"></div></div>
             <!--================= Back Add End Here =================-->
 
             <!--================= Back Whats Posts Start Here =================-->
@@ -558,12 +380,12 @@ get_header();
                             <ul>
                                 <li>
                                     <div class="image-area">
-                                        <a href="#"><img src="assets/images/whats/1.jpg" alt="image"></a>
+                                        <a href="#"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/whats/1.jpg" alt="image"></a>
                                         <div class="back-btm-content">
                                             <a href="#" class="back-cate back-tra">Politics</a>
                                             <h3><a href="#">Man wearing black pullover hoodie to <br> smoke light in mask his own</a></h3>
                                             <ul>
-                                                <li class="back-author"><span><img src="assets/images/author/1.jpg" alt="image"></span><a href="#">by Jon Deo</a></li>
+                                                <li class="back-author"><span><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/author/1.jpg" alt="image"></span><a href="#">by Jon Deo</a></li>
                                                 <li class="back-date"><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg></span>March 26, 2022</li>
                                                 <li class="back-comments"><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-square"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg></span>95 Comments</li>
                                             </ul>
@@ -576,13 +398,13 @@ get_header();
                                     <ul class="back-whats-btm">
                                         <li>
                                             <div class="image-areas">
-                                                <a href="#"><img src="assets/images/whats/2.jpg" alt="image"></a>
+                                                <a href="#"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/whats/2.jpg" alt="image"></a>
                                                 <a href="#" class="back-cate back-tra">Politics</a>
                                             </div>
                                             <div class="back-btm-content">                                                    
                                                 <h3><a href="#">We have prepared 10 types of projects with more than 100 pages We have lots of courses and programs</a></h3>
                                                 <ul>
-                                                    <li class="back-author"><span><img src="assets/images/author/1.jpg" alt="image"></span><a href="#">by Jon Deo</a></li>
+                                                    <li class="back-author"><span><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/author/1.jpg" alt="image"></span><a href="#">by Jon Deo</a></li>
                                                     <li class="back-date"><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg></span>March 26, 2022</li>                                                    
                                                 </ul>
                                             </div>                                            
@@ -593,7 +415,7 @@ get_header();
                                     <ul class="back-hero-bottom back-hero-bottom2">
                                         <li>
                                             <div class="image-areas">
-                                                <a href="#"><img src="assets/images/latest-news/2.jpg" alt="image"></a>                                
+                                                <a href="#"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/latest-news/2.jpg" alt="image"></a>                                
                                             </div>
                                             <div class="back-btm-content">
                                                 <a href="#" class="back-cates">Music</a>
@@ -605,7 +427,7 @@ get_header();
                                         </li>
                                         <li>
                                             <div class="image-areas">
-                                                <a href="#"><img src="assets/images/latest-news/3.jpg" alt="image"></a>
+                                                <a href="#"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/latest-news/3.jpg" alt="image"></a>
                                             </div> 
                                             <div class="back-btm-content">
                                                 <a href="#" class="back-cates">Technology</a>
@@ -617,7 +439,7 @@ get_header();
                                         </li>
                                         <li>
                                             <div class="image-areas">
-                                                <a href="#"><img src="assets/images/latest-news/4.jpg" alt="image"></a>
+                                                <a href="#"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/latest-news/4.jpg" alt="image"></a>
                                             </div> 
                                             <div class="back-btm-content">
                                                 <a href="#" class="back-cates">Travel</a>
@@ -649,7 +471,7 @@ get_header();
                             <ul class="back-hero-bottom">
                                 <li>
                                     <div class="image-areas">
-                                        <a href="#"><img src="assets/images/dont/1.jpg" alt="image"></a>                                
+                                        <a href="#"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/dont/1.jpg" alt="image"></a>                                
                                     </div>
                                     <div class="back-btm-content">
                                         <a href="#" class="back-cates">Politics</a>
@@ -661,7 +483,7 @@ get_header();
                                 </li>
                                 <li>
                                     <div class="image-areas">
-                                        <a href="#"><img src="assets/images/dont/2.jpg" alt="image"></a>
+                                        <a href="#"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/dont/2.jpg" alt="image"></a>
                                     </div> 
                                     <div class="back-btm-content">
                                         <a href="#" class="back-cates">Music</a>
@@ -673,7 +495,7 @@ get_header();
                                 </li>
                                 <li>
                                     <div class="image-areas">
-                                        <a href="#"><img src="assets/images/dont/3.jpg" alt="image"></a>
+                                        <a href="#"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/dont/3.jpg" alt="image"></a>
                                     </div> 
                                     <div class="back-btm-content">
                                         <a href="#" class="back-cates">Lifestyle</a>
@@ -685,7 +507,7 @@ get_header();
                                 </li>
                                 <li>
                                     <div class="image-areas">
-                                        <a href="#"><img src="assets/images/dont/4.jpg" alt="image"></a>                              
+                                        <a href="#"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/dont/4.jpg" alt="image"></a>                              
                                     </div>
                                     <div class="back-btm-content">
                                         <a href="#" class="back-cates">Travel</a>
@@ -697,7 +519,7 @@ get_header();
                                 </li>
                             </ul>  
                             <a href="#" class="view-more"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg> View More</a>
-                            <div class="back-add"> <img src="assets/images/whats/add.jpg" alt="add-image"> </div>                         
+                            <div class="back-add"> <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/whats/add.jpg" alt="add-image"> </div>                         
                         </div>
                     </div>                         
                 </div>
@@ -715,12 +537,12 @@ get_header();
                             <ul>
                                 <li>
                                     <div class="image-area">
-                                        <a href="#"><img src="assets/images/video/1.jpg" alt="image"></a>
+                                        <a href="#"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/video/1.jpg" alt="image"></a>
                                         <a href="https://www.youtube.com/watch?v=e5Hc2B50Z7c" class="popup-videos back-video"><i class="fa-solid fa-play"></i></a>
                                         <div class="back-btm-content">
                                             <h3><a href="#">Mobile's new un-carrier identity less orbit f-bombs more 5G network under sign</a></h3>
                                             <ul>
-                                                <li class="back-author"><span><img src="assets/images/author/1.jpg" alt="image"></span><a href="#">by Jon Deo</a></li>
+                                                <li class="back-author"><span><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/author/1.jpg" alt="image"></span><a href="#">by Jon Deo</a></li>
                                                 <li class="back-date"><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg></span>March 26, 2022</li>
                                             </ul>
                                         </div>
@@ -732,7 +554,7 @@ get_header();
                             <ul class="back-hero-bottom">
                                 <li>
                                     <div class="image-areas">
-                                        <a href="#"><img src="assets/images/video/2.jpg" alt="image"></a> 
+                                        <a href="#"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/video/2.jpg" alt="image"></a> 
                                         <a href="https://www.youtube.com/watch?v=e5Hc2B50Z7c" class="popup-videos back-video"><i class="fa-solid fa-play"></i></a>                               
                                     </div>
                                     <div class="back-btm-content">
@@ -742,7 +564,7 @@ get_header();
                                 </li>
                                 <li>
                                     <div class="image-areas">
-                                        <a href="#"><img src="assets/images/video/3.jpg" alt="image"></a>
+                                        <a href="#"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/video/3.jpg" alt="image"></a>
                                         <a href="https://www.youtube.com/watch?v=e5Hc2B50Z7c" class="popup-videos back-video"><i class="fa-solid fa-play"></i></a>
                                     </div> 
                                     <div class="back-btm-content">
@@ -752,7 +574,7 @@ get_header();
                                 </li>
                                 <li>
                                     <div class="image-areas">
-                                        <a href="#"><img src="assets/images/video/4.jpg" alt="image"></a>
+                                        <a href="#"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/video/4.jpg" alt="image"></a>
                                         <a href="https://www.youtube.com/watch?v=e5Hc2B50Z7c" class="popup-videos back-video"><i class="fa-solid fa-play"></i></a>
                                     </div> 
                                     <div class="back-btm-content">
@@ -762,7 +584,7 @@ get_header();
                                 </li>
                                 <li>
                                     <div class="image-areas">
-                                        <a href="#"><img src="assets/images/video/5.jpg" alt="image"></a>
+                                        <a href="#"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/video/5.jpg" alt="image"></a>
                                         <a href="https://www.youtube.com/watch?v=e5Hc2B50Z7c" class="popup-videos back-video"><i class="fa-solid fa-play"></i></a>                              
                                     </div>
                                     <div class="back-btm-content">
@@ -772,7 +594,7 @@ get_header();
                                 </li>
                                 <li>
                                     <div class="image-areas">
-                                        <a href="#"><img src="assets/images/video/6.jpg" alt="image"></a> 
+                                        <a href="#"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/video/6.jpg" alt="image"></a> 
                                         <a href="https://www.youtube.com/watch?v=e5Hc2B50Z7c" class="popup-videos back-video"><i class="fa-solid fa-play"></i></a>                             
                                     </div>
                                     <div class="back-btm-content">
@@ -782,7 +604,7 @@ get_header();
                                 </li>
                                 <li>
                                     <div class="image-areas">
-                                        <a href="#"><img src="assets/images/video/2.jpg" alt="image"></a>   
+                                        <a href="#"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/video/2.jpg" alt="image"></a>   
                                         <a href="https://www.youtube.com/watch?v=e5Hc2B50Z7c" class="popup-videos back-video"><i class="fa-solid fa-play"></i></a>                             
                                     </div>
                                     <div class="back-btm-content">
@@ -809,70 +631,70 @@ get_header();
                             <ul class="back-hero-bottom back-hero-bottom2">
                                 <li>
                                     <div class="image-areas">
-                                        <a href="#"><img src="assets/images/feature/1.jpg" alt="image"></a>                                
+                                        <a href="#"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/feature/1.jpg" alt="image"></a>                                
                                     </div>
                                     <div class="back-btm-content">
                                         <a href="#" class="back-cate back-tra">Travel</a>
                                         <h3><a href="#">Skydivers in freefall scare after getting tangled up in mid-air</a></h3> 
                                         <p>Congue eligendi excepteur hac nascetur morbi exercita tion ducimus, quae eaexce pturer lander balrola...</p>  
                                         <ul class="back-meta">
-                                            <li class="back-author"><span><img src="assets/images/author/1.jpg" alt="image"></span>by <a href="#">Jon Deo</a></li>
+                                            <li class="back-author"><span><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/author/1.jpg" alt="image"></span>by <a href="#">Jon Deo</a></li>
                                             <li class="back-date"><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg></span>March 26, 2022</li>                                                    
                                         </ul>                                     
                                     </div> 
                                 </li>  
                                 <li>
                                     <div class="image-areas">
-                                        <a href="#"><img src="assets/images/feature/2.jpg" alt="image"></a>                                
+                                        <a href="#"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/feature/2.jpg" alt="image"></a>                                
                                     </div>
                                     <div class="back-btm-content">
                                         <a href="#" class="back-cate back-tech2">Technology</a>
                                         <h3><a href="#">Heineken launches virtual beer in self-mocking metaverse joke</a></h3> 
                                         <p>Congue eligendi excepteur hac nascetur morbi exercita tion ducimus, quae eaexce pturer lander balrola...</p>  
                                         <ul class="back-meta">
-                                            <li class="back-author"><span><img src="assets/images/author/1.jpg" alt="image"></span>by <a href="#">Jon Deo</a></li>
+                                            <li class="back-author"><span><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/author/1.jpg" alt="image"></span>by <a href="#">Jon Deo</a></li>
                                             <li class="back-date"><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg></span>March 26, 2022</li>                                                    
                                         </ul>                                     
                                     </div> 
                                 </li>
                                 <li>
                                     <div class="image-areas">
-                                        <a href="#"><img src="assets/images/feature/3.jpg" alt="image"></a>                                
+                                        <a href="#"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/feature/3.jpg" alt="image"></a>                                
                                     </div>
                                     <div class="back-btm-content">
                                         <a href="#" class="back-cate back-tech">Environment</a>
                                         <h3><a href="#">Industrial pollution are importede straws to have cost implications</a></h3> 
                                         <p>Congue eligendi excepteur hac nascetur morbi exercita tion ducimus, quae eaexce pturer lander balrola...</p>  
                                         <ul class="back-meta">
-                                            <li class="back-author"><span><img src="assets/images/author/1.jpg" alt="image"></span>by <a href="#">Jon Deo</a></li>
+                                            <li class="back-author"><span><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/author/1.jpg" alt="image"></span>by <a href="#">Jon Deo</a></li>
                                             <li class="back-date"><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg></span>March 26, 2022</li>                                                    
                                         </ul>                                     
                                     </div> 
                                 </li>
                                 <li>
                                     <div class="image-areas">
-                                        <a href="#"><img src="assets/images/feature/4.jpg" alt="image"></a>                                
+                                        <a href="#"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/feature/4.jpg" alt="image"></a>                                
                                     </div>
                                     <div class="back-btm-content">
                                         <a href="#" class="back-cate back-fashion">ADVENTURE</a>
                                         <h3><a href="#">Ready for discover sea diving position fall nation area</a></h3> 
                                         <p>Congue eligendi excepteur hac nascetur morbi exercita tion ducimus, quae eaexce pturer lander balrola...</p>  
                                         <ul class="back-meta">
-                                            <li class="back-author"><span><img src="assets/images/author/1.jpg" alt="image"></span>by <a href="#">Jon Deo</a></li>
+                                            <li class="back-author"><span><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/author/1.jpg" alt="image"></span>by <a href="#">Jon Deo</a></li>
                                             <li class="back-date"><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg></span>March 26, 2022</li>                                                    
                                         </ul>                                     
                                     </div> 
                                 </li>
                                 <li>
                                     <div class="image-areas">
-                                        <a href="#"><img src="assets/images/feature/5.jpg" alt="image"></a>                                
+                                        <a href="#"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/feature/5.jpg" alt="image"></a>                                
                                     </div>
                                     <div class="back-btm-content">
                                         <a href="#" class="back-cate back-poli">Politics</a>
                                         <h3><a href="#">If you destroy the earth, you dstroy the chance of life once more</a></h3> 
                                         <p>Congue eligendi excepteur hac nascetur morbi exercita tion ducimus, quae eaexce pturer lander balrola...</p>  
                                         <ul class="back-meta">
-                                            <li class="back-author"><span><img src="assets/images/author/1.jpg" alt="image"></span>by <a href="#">Jon Deo</a></li>
+                                            <li class="back-author"><span><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/author/1.jpg" alt="image"></span>by <a href="#">Jon Deo</a></li>
                                             <li class="back-date"><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg></span>April 25, 2022</li>                                                    
                                         </ul>                                     
                                     </div> 
@@ -889,37 +711,37 @@ get_header();
                             <ul class="back-category-area">
                                 <li>
                                     <div>
-                                        <img src="assets/images/category/1.jpg" alt="Cagegory Image">
+                                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/category/1.jpg" alt="Cagegory Image">
                                         <a href="#"><span><em>10</em> Travel</span></a>
                                     </div>
                                 </li>
                                 <li>
                                     <div>
-                                        <img src="assets/images/category/2.jpg" alt="Cagegory Image">
+                                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/category/2.jpg" alt="Cagegory Image">
                                         <a href="#"><span> <em>19</em> Technology</span></a>
                                     </div>
                                 </li>
                                 <li>
                                     <div>
-                                        <img src="assets/images/category/3.jpg" alt="Cagegory Image">
+                                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/category/3.jpg" alt="Cagegory Image">
                                         <a href="#"><span> <em>15</em> Food</span></a>
                                     </div>
                                 </li>
                                 <li>
                                     <div>
-                                        <img src="assets/images/category/4.jpg" alt="Cagegory Image">
+                                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/category/4.jpg" alt="Cagegory Image">
                                         <a href="#"><span> <em>20</em> Fashion</span></a>
                                     </div>
                                 </li>
                                 <li>
                                     <div>
-                                        <img src="assets/images/category/5.jpg" alt="Cagegory Image">
+                                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/category/5.jpg" alt="Cagegory Image">
                                         <a href="#"><span> <em>22</em> Life Style</span></a>
                                     </div>
                                 </li>
                                 <li>
                                     <div>
-                                        <img src="assets/images/category/6.jpg" alt="Cagegory Image">
+                                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/category/6.jpg" alt="Cagegory Image">
                                         <a href="#"><span> <em>18</em> Adventure</span></a>
                                     </div>
                                 </li>
@@ -930,7 +752,7 @@ get_header();
                             <ul class="back-hero-bottom">
                                 <li>
                                     <div class="image-areas">
-                                        <a href="#"><img src="assets/images/read/1.jpg" alt="image"></a>                                
+                                        <a href="#"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/read/1.jpg" alt="image"></a>                                
                                     </div>
                                     <div class="back-btm-content">
                                         <a href="#" class="back-cates">Politics</a>
@@ -939,7 +761,7 @@ get_header();
                                 </li>
                                 <li>
                                     <div class="image-areas">
-                                        <a href="#"><img src="assets/images/read/2.jpg" alt="image"></a>
+                                        <a href="#"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/read/2.jpg" alt="image"></a>
                                     </div> 
                                     <div class="back-btm-content">
                                         <a href="#" class="back-cates">Technology</a>
@@ -948,7 +770,7 @@ get_header();
                                 </li>
                                 <li>
                                     <div class="image-areas">
-                                        <a href="#"><img src="assets/images/read/3.jpg" alt="image"></a>
+                                        <a href="#"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/read/3.jpg" alt="image"></a>
                                     </div> 
                                     <div class="back-btm-content">
                                         <a href="#" class="back-cates">Environment</a>
@@ -957,7 +779,7 @@ get_header();
                                 </li>
                                 <li>
                                     <div class="image-areas">
-                                        <a href="#"><img src="assets/images/read/4.jpg" alt="image"></a>                              
+                                        <a href="#"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/read/4.jpg" alt="image"></a>                              
                                     </div>
                                     <div class="back-btm-content">
                                         <a href="#" class="back-cates">Travel</a>
@@ -966,7 +788,7 @@ get_header();
                                 </li>
                                 <li>
                                     <div class="image-areas">
-                                        <a href="#"><img src="assets/images/read/5.jpg" alt="image"></a>                              
+                                        <a href="#"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/read/5.jpg" alt="image"></a>                              
                                     </div>
                                     <div class="back-btm-content">
                                         <a href="#" class="back-cates">Lifestyle</a>
@@ -975,7 +797,7 @@ get_header();
                                 </li>
                                 <li>
                                     <div class="image-areas">
-                                        <a href="#"><img src="assets/images/read/6.jpg" alt="image"></a>                              
+                                        <a href="#"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/read/6.jpg" alt="image"></a>                              
                                     </div>
                                     <div class="back-btm-content">
                                         <a href="#" class="back-cates">Art & Design</a>
@@ -987,12 +809,12 @@ get_header();
                                 <h2>Follow Us</h2>                                
                             </div>    
                             <ul class="back-instragram">
-                                <li><a href="#"> <img src="assets/images/instragram/1.jpg" alt="image"> <i class="fa-brands fa-instagram"></i></a></li>
-                                <li><a href="#"> <img src="assets/images/instragram/2.jpg" alt="image"> <i class="fa-brands fa-instagram"></i></a></li>
-                                <li><a href="#"> <img src="assets/images/instragram/3.jpg" alt="image"> <i class="fa-brands fa-instagram"></i></a></li>
-                                <li><a href="#"> <img src="assets/images/instragram/4.jpg" alt="image"> <i class="fa-brands fa-instagram"></i></a></li>
-                                <li><a href="#"> <img src="assets/images/instragram/5.jpg" alt="image"> <i class="fa-brands fa-instagram"></i></a></li>
-                                <li><a href="#"> <img src="assets/images/instragram/6.jpg" alt="image"> <i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a href="#"> <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/instragram/1.jpg" alt="image"> <i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a href="#"> <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/instragram/2.jpg" alt="image"> <i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a href="#"> <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/instragram/3.jpg" alt="image"> <i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a href="#"> <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/instragram/4.jpg" alt="image"> <i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a href="#"> <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/instragram/5.jpg" alt="image"> <i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a href="#"> <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/instragram/6.jpg" alt="image"> <i class="fa-brands fa-instagram"></i></a></li>
                             </ul>                   
                         </div>
                     </div>                         
@@ -1005,12 +827,12 @@ get_header();
                 <ul class="back-footer-top-slider owl-carousel">
                     <li>
                         <div class="image-area">
-                            <a href="#"><img src="assets/images/footer-top/1.jpg" alt="image"></a>
+                            <a href="#"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/footer-top/1.jpg" alt="image"></a>
                             <div class="back-btm-content">
                                 <a href="#" class="back-cate back-life">Lifestyle</a>
                                 <h3><a href="#">The 15 best designer tote bags on that carry it all of the sports</a></h3>
                                 <ul>
-                                    <li class="back-author"><span><img src="assets/images/author/1.jpg" alt="image"></span><a href="#">by Jon Deo</a></li>
+                                    <li class="back-author"><span><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/author/1.jpg" alt="image"></span><a href="#">by Jon Deo</a></li>
                                     <li class="back-date"><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg></span>March 29, 2022</li>
                                 </ul>
                             </div>
@@ -1018,12 +840,12 @@ get_header();
                     </li>
                     <li>
                         <div class="image-area">
-                            <a href="#"><img src="assets/images/footer-top/2.jpg" alt="image"></a>
+                            <a href="#"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/footer-top/2.jpg" alt="image"></a>
                             <div class="back-btm-content">
                                 <a href="#" class="back-cate back-tra">Travel</a>
                                 <h3><a href="#">Kilitary-inspired fashions take on new design bnoloine war</a></h3>
                                 <ul>
-                                    <li class="back-author"><span><img src="assets/images/author/2.jpg" alt="image"></span><a href="#">by Jon Deo</a></li>
+                                    <li class="back-author"><span><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/author/2.jpg" alt="image"></span><a href="#">by Jon Deo</a></li>
                                     <li class="back-date"><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg></span>March 29, 2022</li>
                                 </ul>
                             </div>
@@ -1031,12 +853,12 @@ get_header();
                     </li>
                     <li>
                         <div class="image-area">
-                            <a href="#"><img src="assets/images/footer-top/3.jpg" alt="image"></a>
+                            <a href="#"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/footer-top/3.jpg" alt="image"></a>
                             <div class="back-btm-content">
                                 <a href="#" class="back-cate back-tech">Technology</a>
                                 <h3><a href="#">Advanced sensor system may open door to zero death driving</a></h3>
                                 <ul>
-                                    <li class="back-author"><span><img src="assets/images/author/2.jpg" alt="image"></span><a href="#">by Jon Deo</a></li>
+                                    <li class="back-author"><span><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/author/2.jpg" alt="image"></span><a href="#">by Jon Deo</a></li>
                                     <li class="back-date"><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg></span>March 29, 2022</li>
                                 </ul>
                             </div>
@@ -1044,12 +866,12 @@ get_header();
                     </li>
                     <li>
                         <div class="image-area">
-                            <a href="#"><img src="assets/images/footer-top/4.jpg" alt="image"></a>
+                            <a href="#"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/footer-top/4.jpg" alt="image"></a>
                             <div class="back-btm-content">
                                 <a href="#" class="back-cate back-fashion">Fashion</a>
                                 <h3><a href="#">Palenciaga and crocs team new ‘pool’ style of other nation</a></h3>
                                 <ul>
-                                    <li class="back-author"><span><img src="assets/images/author/2.jpg" alt="image"></span><a href="#">by Jon Deo</a></li>
+                                    <li class="back-author"><span><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/author/2.jpg" alt="image"></span><a href="#">by Jon Deo</a></li>
                                     <li class="back-date"><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg></span>March 29, 2022</li>
                                 </ul>
                             </div>
@@ -1057,12 +879,12 @@ get_header();
                     </li>
                     <li>
                         <div class="image-area">
-                            <a href="#"><img src="assets/images/footer-top/5.jpg" alt="image"></a>
+                            <a href="#"><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/footer-top/5.jpg" alt="image"></a>
                             <div class="back-btm-content">
                                 <a href="#" class="back-cate back-poli">Politics</a>
                                 <h3><a href="#">wearing black pullover hoodie to smoke light in mask his own</a></h3>
                                 <ul>
-                                    <li class="back-author"><span><img src="assets/images/author/2.jpg" alt="image"></span><a href="#">by Jon Deo</a></li>
+                                    <li class="back-author"><span><img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/author/2.jpg" alt="image"></span><a href="#">by Jon Deo</a></li>
                                     <li class="back-date"><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg></span>March 29, 2022</li>
                                 </ul>
                             </div>
@@ -1082,7 +904,7 @@ get_header();
                         <div class="col-lg-3 md-mb-30">
                             <div class="footer-widget footer-widget-1">
                                 <div class="footer-logo white">
-                                    <a href="index.html" class="logo-text"> <img src="assets/images/light-logo.png" alt="logo"></a>
+                                    <a href="index.html" class="logo-text"> <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/images/light-logo.png" alt="logo"></a>
                                 </div>
                                 <h5 class="footer-subtitle">We have lots of courses and programs from the main market experts.</h5>
                                 <h6 class="back-follow-us">Follow us</h6>
@@ -1159,5 +981,6 @@ get_header();
         </div> 
         <!--================= Scroll to Top End =================-->
         <?php
-get_footer();
+ 
+
 ?>
